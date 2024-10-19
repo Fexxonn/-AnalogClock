@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  --text: #000;
+  --manecillas: #000;
+  --backgound: #fff;
+  color: var(--text);
+  background-color: var(--backgound);
+}
+
+.black {
+  --text: #fff;
+  --backgound: #000;
+  --manecillas: #aaaaaa;
+}
+
+#numeros span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 15px;
+  height: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 4vmin;
+}
+#clock {
+  max-width: 80vmin;
+  max-height: 80vmin;
+
+  box-shadow: 0 10px 30px -20px var(--text) inset, 0 10px 30px -20px var(--text);
+  border-radius: 50%;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.punto {
+  background: var(--text);
+  border-radius: 50%;
+
+  width: 4vmin;
+  height: 4vmin;
+
+  z-index: 1;
+}
+
+.manecilla {
+  position: absolute;
+  top: 50%;
+  background-color: var(--manecillas);
+  transform-origin: center top;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  
+}
+.manecilla#horas {
+  height: 15vmin;
+  width: 2vmin;
+  left: calc(50% - 1vmin);
+  
+}
+.manecilla#minutos {
+  height: 20vmin;
+  width: 1vmin;
+  left: calc(50% - 0.5vmin);
+  
+}
+.manecilla#segundos {
+  background-color: red;
+  height: 30vmin;
+  width: 0.5vmin;
+  left: calc(50% - 0.25vmin);
+}
+
