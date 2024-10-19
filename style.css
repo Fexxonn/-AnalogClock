@@ -22,7 +22,7 @@ body {
 
 #numeros span {
   position: absolute;
-  top: 50dvh;
+  top: 50lvh;
   left: 50vw;
 
   width: 15px;
