@@ -61,7 +61,7 @@ body {
 
 .manecilla {
   position: absolute;
-  top: 50%;
+  top: 50lvh;
   background-color: var(--manecillas);
   transform-origin: center top;
   border-bottom-left-radius: 100%;
